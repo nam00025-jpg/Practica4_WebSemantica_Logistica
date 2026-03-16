@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:log="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#"
+   xmlns:owl="http://www.w3.org/2002/07/owl#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+   xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+   xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Cliente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#esGeneradoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#generaEnvío"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#registraEstado">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#EstadoEnvio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empleado">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#transporta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N9c70c130593f4942b91f760c526ef15b">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label>Regla_Repartidor</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N4e49d7b9cc46405aa8281d900ae47b85"/>
+    <swrl:head rdf:nodeID="Ne464205014544dd78eaf90317b6bcb3b"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N51569e14e853473682707e043e4ee1d8">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N88f690247fbe4d828b7985dc91f6a68c"/>
+    <rdf:rest rdf:nodeID="N275707a55c124f9ea6f77af1dcd85f26"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N4e49d7b9cc46405aa8281d900ae47b85">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Ne1a5fb7dacb3462abad8f88a14c95af0"/>
+    <rdf:rest rdf:nodeID="N99f47a8ca0e34f5ab824d8435d4ef12e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#fechaRegistro">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#asignadaA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tieneRutaAsignada"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Transportista"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#generaEnvío">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Remitente"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Caja_libros">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Paquete"/>
+    <log:dirigidoA rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Natalia_Cliente"/>
+    <log:identificadorAlfanumerico>1234</log:identificadorAlfanumerico>
+    <log:pesoKg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.88</log:pesoKg>
+    <log:pesoKg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.5</log:pesoKg>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#EstadoEnvio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Infraestructura"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Caja_Raton">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Paquete"/>
+    <log:dirigidoA rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Alicia_Cliente"/>
+    <log:pesoKg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</log:pesoKg>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#esConducidoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Bolsa_Ropa">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Paquete"/>
+    <log:dirigidoA rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ismael_Cliente"/>
+    <log:pesoKg rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</log:pesoKg>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne1a5fb7dacb3462abad8f88a14c95af0">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#conduceVehículo"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/t"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/v"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5590899bd3f641da82ef1de8709390ee">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tieneClienteDestino"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/r"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#estaUbicadoEn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N99f47a8ca0e34f5ab824d8435d4ef12e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nce49ff2e599746d5be4ad572d42efad3"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N88f690247fbe4d828b7985dc91f6a68c">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#generaEnvío"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/r"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N69c6248c3c1d498b943b387685afb7fe">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#reparteEnvio"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/t"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Paquete">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N275707a55c124f9ea6f77af1dcd85f26">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="Nd0bb93f5daac4a3fac40e6854b4c8719"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Moto_02">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+    <log:transporta rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Bolsa_Ropa"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nd0bb93f5daac4a3fac40e6854b4c8719">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#dirigidoA"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#iniciaEn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Transportista">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empleado"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/v">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#conduceVehículo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#esConducidoPor"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Transportista"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#esTransportadoPor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    <owl:inverseOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#transporta"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#pesoKg">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa_PcComponentes">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Remitente"/>
+    <log:generaEnvio rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Caja_Raton"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa_Amazon">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Remitente"/>
+    <log:generaEnvío rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Caja_libros"/>
+    <log:generaEnvio rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Caja_libros"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#dirigidoA">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Destinatario"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#EstadoEnvio"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Infraestructura"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Carta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Paquete"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nbceb51f483134409886e77929fe6dae1">
+    <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+    <rdfs:comment></rdfs:comment>
+    <rdfs:label>Regla_Cartera_Clientes</rdfs:label>
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+    <swrl:body rdf:nodeID="N51569e14e853473682707e043e4ee1d8"/>
+    <swrl:head rdf:nodeID="N5267663a1904483aa88f5a80a029d7d7"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Infraestructura">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#finalizaEn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#UbicaciónDestino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Ne464205014544dd78eaf90317b6bcb3b">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N69c6248c3c1d498b943b387685afb7fe"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/r">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Natalia_Cliente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Destinatario"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Furgoneta_01">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+    <log:transporta rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Caja_libros"/>
+    <log:transporta rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Caja_Raton"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tieneClienteDestino">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#ENV003">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#ENV001">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#telefonoContacto">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Persona"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="N5267663a1904483aa88f5a80a029d7d7">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+    <rdf:first rdf:nodeID="N5590899bd3f641da82ef1de8709390ee"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/d">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/t">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Empresa_Zara">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Remitente"/>
+    <log:generaEnvio rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Bolsa_Ropa"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Destinatario">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Cliente"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Remitente"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Laura_Repartidora">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Transportista"/>
+    <log:conduceVehiculo rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Moto_02"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="Nce49ff2e599746d5be4ad572d42efad3">
+    <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+    <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#transporta"/>
+    <swrl:argument1 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/v"/>
+    <swrl:argument2 rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3/e"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#identificadorAlfanumerico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ruta">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:disjointWith rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Vehiculo"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Ontology"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#CentroLogistico">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Infraestructura"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#procesadoEn">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:domain rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envío"/>
+    <rdfs:range rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Infraestructura"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#UbicaciónOrigen">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ubicación"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Paco_Repartidor">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Transportista"/>
+    <log:conduceVehículo rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Furgoneta_01"/>
+    <log:conduceVehiculo rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Furgoneta_01"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#reparteEnvio">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#tieneRutaAsignada">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+    <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Remitente">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Cliente"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Alicia_Cliente">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Destinatario"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#ENV002">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Envio"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Ismael_Cliente">
+    <rdf:type rdf:resource="http://www.semanticweb.org/admin/ontologies/2026/2/untitled-ontology-3#Destinatario"/>
+  </rdf:Description>
+</rdf:RDF>

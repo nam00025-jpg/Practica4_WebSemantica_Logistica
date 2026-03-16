@@ -1,0 +1,4 @@
+id_envio,remitente,destinatario,paquete,transportista,vehiculo,peso
+ENV001,Empresa_Amazon,Natalia_Cliente,Caja_libros,Paco_Repartidor,Furgoneta_01,2.5
+ENV002,Empresa_Zara,Ismael_Cliente,Bolsa_Ropa,Laura_Repartidora,Moto_02,1.2
+ENV003,Empresa_PcComponentes,Alicia_Cliente,Caja_Raton,Paco_Repartidor,Furgoneta_01,0.5
